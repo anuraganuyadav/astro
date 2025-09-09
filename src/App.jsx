@@ -46,7 +46,6 @@ import ListCategory from './components/Admin/ListCategory';
 import AddSubCategory from './components/Admin/AddSubCategory';
 import AddProduct from './components/Admin/AddProduct';
 import ListProduct from './components/Admin/ListProduct';
-import PopularServices from './components/Common/PopularServices';
 import PopularServiceDetail from './components/Common/PopularServiceDetail';
 import ConsultDetails from './components/Common/ConsultDetails';
 ;
