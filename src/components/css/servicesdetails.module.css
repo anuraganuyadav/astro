@@ -6,7 +6,7 @@
 	height: 400px;
 	/* Set a fixed height for the banner */
 	padding: 0;
-	/* Remove extra padding to reduce height */
+	/* Remove extra padding to reduce heigh */
 }
 
 .servicedetailbanner img {
@@ -37,7 +37,7 @@
 
 .servicepagecontent1 h1 {
 	text-align: center;
-	color: #e3001a;
+	color: #e0122a;
 	font-weight: 900;
 	/* font-size: 3.5em; */
 	line-height: 1em;
