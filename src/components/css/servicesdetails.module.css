@@ -12,7 +12,8 @@
 .servicedetailbanner img {
 	animation: imgRotate 50s linear infinite;
 	border-radius: 50%;
-	width: auto;
+		width: 12rem;
+	/* width: auto; */
 	/* Let the width adjust itself automatically */
 	height: 200px;
 	/* Adjust the height of the image */

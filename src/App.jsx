@@ -35,20 +35,133 @@ import ContactUs from './components/ContactUs';
 import TermsCondition from './components/TermsCondition';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import AboutUs from './components/AboutUs';
-// admin panel components
-import AdminLayout from './components/Admin/AdminLayout';
+
+import { SUBFOLDER_NAME } from './components/Common/https';
+import ProtectedRoute from './components/ProtectedRoute';
+import DashboardLayout from './components/Admin/DashboardLayout';
+import DashboardPage from './components/Admin/DashboardPage';
+import Login from './components/Admin/Login';
+import AddCategory from './components/Admin/AddCategory';
+import ListCategory from './components/Admin/ListCategory';
+import AddSubCategory from './components/Admin/AddSubCategory';
+import AddProduct from './components/Admin/AddProduct';
+import ListProduct from './components/Admin/ListProduct';
+import PopularServices from './components/Common/PopularServices';
+import PopularServiceDetail from './components/Common/PopularServiceDetail';
+import ConsultDetails from './components/Common/ConsultDetails';
+;
+
+
 
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter basename={SUBFOLDER_NAME}>
+      <Routes >
         {/* admin panel routes */}
-        <Route path="/admin" element={<AdminLayout />} />
+
+        <Route
+          path="/add-category"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <AddCategory></AddCategory>
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/list-category"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <ListCategory></ListCategory>
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+
+
+        <Route
+          path="/add-subcategory"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <AddSubCategory></AddSubCategory>
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/list-subcategory"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <ListCategory></ListCategory>
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+
+
+        <Route
+          path="/add-product"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <AddProduct></AddProduct>
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/list-product"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                <ListProduct></ListProduct>
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+
+
+        {/* Protected Routes */}
+        <Route
+          path="/list"
+          element={
+            <ProtectedRoute>
+              <DashboardLayout>
+                {/* <List /> */}
+              </DashboardLayout>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <ProtectedRoute>
+              <DashboardPage />
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Public Route */}
+        <Route path="login" element={<Login />} />
+
         {/* admin panel routes end */}
+
+
+        {/* website route */}
         <Route path="/" element={<Layout />} />
+        <Route path="/service-details/:category" element={<PopularServiceDetail />} />
+
         <Route path="service-details/:category/:subcategory" element={<ServicesDetails />} />
+        <Route path="consult/:category/:subcategory" element={<ConsultDetails />} />
         <Route path="/product-details" element={<ProductShopDetails />} />
         <Route path="/product-checkout" element={<ProductCheckout />} />
         <Route path="/articles" element={<Blogs />} />

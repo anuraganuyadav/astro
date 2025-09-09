@@ -11,7 +11,7 @@ const ProductShopDetails = () => {
 		setActiveSection(section);
 	};
 
-	const [mainImage, setMainImage] = useState("../img/products/bracelet.jfif");
+	const [mainImage, setMainImage] = useState("img/products/bracelet.jfif");
 
 	const handleThumbnailClick = (src) => {
 		setMainImage(src);
@@ -46,28 +46,28 @@ const ProductShopDetails = () => {
 						{/* Thumbnails Section */}
 						<div className={`${styles.thumbnailContainer} thumbnail-container`}>
 							<img
-								src="../img/products/bracelet.jfif"
+								src="img/products/bracelet.jfif"
 								alt="Thumbnail 1"
 								className={styles.thumbnailrounded}
-								onClick={() => handleThumbnailClick("../img/products/bracelet.jfif")}
+								onClick={() => handleThumbnailClick("img/products/coach.jfif")}
 							/>
 							<img
-								src="../img/products/bracelet.jfif"
+								src="img/products/bracelet.jfif"
 								alt="Thumbnail 2"
 								className={styles.thumbnailrounded}
-								onClick={() => handleThumbnailClick("../img/products/bracelet.jfif")}
+								onClick={() => handleThumbnailClick("img/products/bracelet.jfif")}
 							/>
 							<img
-								src="../img/products/bracelet.jfif"
+								src="img/products/bracelet.jfif"
 								alt="Thumbnail 3"
 								className={styles.thumbnailrounded}
-								onClick={() => handleThumbnailClick("../img/products/bracelet.jfif")}
+								onClick={() => handleThumbnailClick("img/products/crystal.jfif")}
 							/>
 							<img
-								src="../img/products/bracelet.jfif"
+								src="img/products/bracelet.jfif"
 								alt="Thumbnail 4"
 								className={styles.thumbnailrounded}
-								onClick={() => handleThumbnailClick("../img/products/bracelet.jfif")}
+								onClick={() => handleThumbnailClick("img/products/bracelet.jfif")}
 							/>
 						</div>
 					</div>
@@ -156,20 +156,20 @@ const ProductShopDetails = () => {
 								<h3 className={styles.dthead}>Additional Information</h3>
 								<div className={styles.inclusionscontainer}>
 									<div className={styles.inclusionitem}>
-										<img src="/img/check-mark.png" alt="check mark" />
+										<img src="img/check-mark.png" alt="check mark" />
 										<span>color</span>
 										<p>Red</p>
 
 									</div>
 
 									<div className={styles.inclusionitem}>
-										<img src="/img/check-mark.png" alt="check mark" />
+										<img src="img/check-mark.png" alt="check mark" />
 										<span>Weight</span>
 										<p>0.5 gram</p>
 									</div>
 
 									<div className={styles.inclusionitem}>
-										<img src="/img/check-mark.png" alt="check mark" />
+										<img src="img/check-mark.png" alt="check mark" />
 										<span>Quanity</span>
 										<p>1</p>
 									</div>

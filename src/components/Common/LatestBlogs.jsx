@@ -78,53 +78,72 @@
 
 // export default LatestBlogs;
 
-
-import React from 'react';
-import styles from '../css/latestblog.module.css';
-import blogs from '../js/blogsData';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import styles from "../css/latestblog.module.css";
+import blogs from "../js/blogsData";
+import { Link } from "react-router-dom";
 
 const LatestBlogs = () => {
-    // Filter out the active blogs
-    const activeBlogs = blogs.filter(blog => blog.popular_article === "Active");
+  // Filter out the active blogs
+  const activeBlogs = blogs.filter((blog) => blog.popular_article === "Active");
 
-    return (
-        <>
-            {/* Latest Blog Start */}
-            <div className="container-xxl py-5">
-                <div className="container">
-                    <div>
-                        <h2 className={`${styles.latestblogheading} text-center`}>Latest Articles</h2>
-                        <p className='container'>
-                            As the name indicates, Temples Hub is a one-stop solution provider for all your pilgrimage/temple tour needs. We provide unmatched temple tour packages like Chardham Packages, South India Temple Tours, Ooty Tours, etc. Find our most popular packages below and book as per your choice.
-                        </p>
+  return (
+    <>
+      {/* Latest Blog Start */}
+      <div className="container-xxl py-5">
+        <div className="container">
+          <div>
+            <h2 className={`${styles.latestblogheading} text-center`}>
+              Latest Blogs
+            </h2>
+            <p className="container">
+              As the name indicates, Temples Hub is a one-stop solution provider
+              for all your pilgrimage/temple tour needs. We provide unmatched
+              temple tour packages like Chardham Packages, South India Temple
+              Tours, Ooty Tours, etc. Find our most popular packages below and
+              book as per your choice.
+            </p>
+          </div>
+          <div className="row g-4">
+            {/* Dynamically render active blogs */}
+            {activeBlogs.map((blog, index) => (
+              <div
+                className="col-lg-3 col-sm-6 wow fadeInUp"
+                data-wow-delay={`${index * 0.2}s`}
+                key={blog.title}
+              >
+                <div className={`${styles.latestblg} rounded pt-3`}>
+                  <div className="p-4">
+                    <div className={styles["blog-image"]}>
+                      <img
+                        src={blog.image}
+                        alt={blog.title}
+                        className="img-fluid rounded"
+                      />
                     </div>
-                    <div className="row g-4">
-                        {/* Dynamically render active blogs */}
-                        {activeBlogs.map((blog, index) => (
-                            <div className="col-lg-4 col-sm-6 wow fadeInUp" data-wow-delay={`${index * 0.2}s`} key={blog.title}>
-                                <div className=" rounded pt-3">
-                                    <div className="p-4">
-                                        <div className={styles['blog-image']}>
-                                            <img src={blog.image} alt={blog.title} className="img-fluid rounded" />
-                                        </div>
-                                        <h5>{blog.title}</h5>
-                                        <p>{blog.date}</p>
-                                        <p>{blog.short_desc}</p>
-                                        <Link to="/detail-blogs">
-                                            <button type="button" className="btn btn-danger service-item">Read More</button>
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
+                    <h5 className={styles.blgtitle}>{blog.title}</h5>
+                    <p className={styles.blgtitle}>{blog.date}</p>
+                    <p className={styles.blgtitle}>{blog.short_desc}</p>
+                    <Link to="/detail-blogs">
+                      <div className={styles.blgbtn}>
+                        <button
+                          type="button"
+                          className="btn btn-danger service-item"
+                        >
+                          Read More
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
                 </div>
-            </div>
-            {/* Latest Blog End */}
-        </>
-    );
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* Latest Blog End */}
+    </>
+  );
 };
 
 export default LatestBlogs;

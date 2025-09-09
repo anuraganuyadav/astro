@@ -56,7 +56,7 @@ const Blogs = () => {
                         <div className="col-lg-9">
                             <div className="row">
                                 {currentPosts.map((post, index) => (
-                                    <div key={index} className="col-lg-4 col-md-6 mb-5">
+                                    <div key={index} className="col-lg-3 col-md-6 mb-5">
                                         <div className="blog-item">
                                             <div className={`${styles.blogimg} blog-thumb`}>
                                                 <img src={post.image} alt="" className="img-fluid" />

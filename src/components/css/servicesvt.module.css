@@ -75,15 +75,16 @@
 
 .servicecontainer1>img {
 	width: 100% !important;
+	height: 10rem;
 	transition: all .5slinear;
 	border-radius: 50%;
 }
 
 .servicecontainer1a {
-	padding: 10px 5px;
-	color: #000;
+	padding: 10px 2px;
+	color: blue;
 	width: 100%;
-	font-size: 20px;
+	/* font-size: 20px; */
 	text-align: center;
 }
 
@@ -101,7 +102,7 @@
 	padding: 7px;
 	color: #000;
 	transition: all .3s;
-	margin-top: 2rem;
+	margin-top: -1rem;
 	border-radius: 5px;
 	background-color: orangered;
 	color: white;
@@ -127,4 +128,9 @@
 	/* Removes default margin */
 	padding: 0;
 	/* Removes default padding */
+}
+
+
+.vtservices{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }

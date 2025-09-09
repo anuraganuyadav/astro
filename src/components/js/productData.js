@@ -1,8 +1,15 @@
+import product1 from "/img/products/gemstone.jfif";
+import product2 from "/img/products/bracelet.jfif";
+import product3 from "/img/products/crystal.jfif";
+import product4 from "/img/products/coach.jfif";
+
+
+
 export const products = [
   {
     category_name: "Gemstones",
     title: "Amethyst Gemstone, Katela Stone, Oval Shape",
-    image: "../img/products/gemstone.jfif",
+    image: product1,
     date: "28th January",
     views: "5 Views",
     popular_products: "Active",
@@ -10,7 +17,7 @@ export const products = [
   {
     category_name: "Bracelets",
     title: "Amethyst Gemstone, Katela Stone, Oval Bracelets",
-    image: "../img/products/bracelet.jfif",
+    image: product2,
     date: "28th January",
     views: "5 Views",
     popular_products: "Active",
@@ -18,7 +25,7 @@ export const products = [
   {
     category_name: "Crystal",
     title: "Amethyst Gemstone, Katela Stone, Oval Crystal",
-    image: "../img/products/crystal.jfif",
+    image: product3,
     date: "28th January",
     views: "5 Views",
     popular_products: "Active",
@@ -26,7 +33,8 @@ export const products = [
   {
     category_name: "Conch",
     title: "Amethyst Gemstone, Katela Stone, Oval Conch",
-    image: "../img/products/coach.jfif",
+    // image: "../img/products/coach.jfif",
+    image: product4,
     date: "28th January",
     views: "5 Views",
     popular_products: "Active",

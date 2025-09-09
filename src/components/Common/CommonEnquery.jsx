@@ -7,7 +7,7 @@ const CommonEnquery = ({ onEnqueryClick }) => {
 			<div>
 				<div className="horizontally-enquery-container">
 					<a href="#" className="horizontally-enquery-btn" onClick={onEnqueryClick}>
-						Appointment Now
+						Enquery Now
 					</a>
 				</div>
 			</div>

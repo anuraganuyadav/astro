@@ -24,7 +24,7 @@ const ServicesVT = () => {
           <div className="col-lg-12">
             <div className="row">
               {servicesDataVt.map((service) => (
-                <div className="col-md-4" key={service.id}>
+                <div className={`${styles.vtservices} col-md-3`} key={service.id}>
                   <div className={styles.servicecontainer}>
                     <div className={styles.servicecontainer1}>
                       <img
@@ -37,8 +37,15 @@ const ServicesVT = () => {
                     </div>
                   </div>
                   <div className={styles.servicetext}>
-                    <p className={styles.servicetext}>{service.description}</p>
-                    <Link to={service.link}>MORE INFO</Link>
+                    {/* <p className={styles.servicetext}>{service.description}</p> */}
+                    {/* <Link to={service.link}>KNOW & CONSULT</Link> */}
+                    {/* <a href="#">KNOW & CONSULT</a> */}
+                    <Link
+                      to={`/consult/${service.category}/${service.subcategory}`}
+                    >
+                      KNOW & CONSULT
+                    </Link>
+
                   </div>
                 </div>
               ))}
