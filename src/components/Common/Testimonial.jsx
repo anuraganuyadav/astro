@@ -2,7 +2,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "../css/testimonial.module.css";
-
+import commonStyles from "../css/common.module.css";
 // Example of reviews data (replace with real data)
 const reviews = [
     {
@@ -61,7 +61,7 @@ function Testimonial() {
             <div className="container">
                 <div>
                     <h2 className={`${styles.testimonialheading} text-center`}>Our Clients Say!!!</h2>
-                    <p className='container'>
+                        <p className={`${commonStyles.commonpara} container`}>
                         As the name indicates, Temples Hub one stop solution provider for all your pilgrimage/ temple tour needs. We provide unmatched temples tour packages like Chardham Packages, South India Temple Tours, Ooty Tours etc. Find our most popular packages below and book as per your choice.
                     </p>
                 </div>

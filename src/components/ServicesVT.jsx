@@ -1,6 +1,7 @@
 
 import React from "react";
 import styles from ".../../css/servicesvt.module.css"; // Ensure correct path
+import commonStyles from ".../../css/common.module.css";
 import servicesDataVt from "./js/servicesDataVt"; // Import the services data
 import { Link } from "react-router-dom";
 
@@ -11,11 +12,10 @@ const ServicesVT = () => {
         <h2 className={`${styles.servicesvtheading} text-center`}>
           Get solution to all your problems by consulting Astrologer Vivek Tiwari
         </h2>
-        <p className="container">
-          As the name indicates, Temples Hub one stop solution provider for all
-          your pilgrimage/ temple tour needs. We provide unmatched temples tour
-          packages like Chardham Packages, South India Temple Tours, Ooty Tours
-          etc. Find our most popular packages below and book as per your choice.
+        <p className={`${commonStyles.commonpara} container`}>
+          Astrologer Vivek Tiwari offers accurate Astrology, Numerology, and Vastu solutions, blending traditional wisdom with a modern scientific approach.
+          His guidance helps individuals resolve life challenges, achieve harmony, and make informed decisions.
+          Trusted for his clarity and efficiency, he is recognized as one of the best astrologers in Ghaziabad and Delhi NCR.
         </p>
       </div>
 

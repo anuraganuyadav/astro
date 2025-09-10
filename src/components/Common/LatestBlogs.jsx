@@ -80,6 +80,7 @@
 
 import React from "react";
 import styles from "../css/latestblog.module.css";
+import commonStyles from "../css/common.module.css";
 import blogs from "../js/blogsData";
 import { Link } from "react-router-dom";
 
@@ -96,12 +97,10 @@ const LatestBlogs = () => {
             <h2 className={`${styles.latestblogheading} text-center`}>
               Latest Blogs
             </h2>
-            <p className="container">
-              As the name indicates, Temples Hub is a one-stop solution provider
-              for all your pilgrimage/temple tour needs. We provide unmatched
-              temple tour packages like Chardham Packages, South India Temple
-              Tours, Ooty Tours, etc. Find our most popular packages below and
-              book as per your choice.
+             <p className={`${commonStyles.commonpara} container`}>
+              Astrologer Vivek Tiwari’s articles provide deep insights into Astrology, Vastu, and Numerology with practical guidance for everyday life.
+              Each write-up blends ancient knowledge with modern perspectives, making complex concepts easy to understand.
+              His writings aim to educate, inspire, and empower readers seeking clarity and balance in their personal and professional journeys.
             </p>
           </div>
           <div className="row g-4">

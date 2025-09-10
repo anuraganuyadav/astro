@@ -530,3 +530,7 @@
 .container-xxl {
   max-width: 100% !important; 
 }
+
+.commonpara{
+  color: black;
+}

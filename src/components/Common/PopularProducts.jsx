@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styles from "../css/popularproducts.module.css";
+import commonStyles from "../css/common.module.css";
 import Pagination from "../Common/Pagination";
 import { products } from "../js/productData";
 import { Link } from "react-router-dom";
@@ -47,7 +48,7 @@ const PopularProduct = () => {
       <section className={styles.sectionblogwrap}>
         <div>
           <h2 className={`${styles.popularheading} text-center`}>Popular Products</h2>
-          <p className="container">
+             <p className={`${commonStyles.commonpara} container`}>
             As the name indicates, Temples Hub is your one-stop solution provider for all your pilgrimage/temple tour needs. We provide unmatched temple tour packages like Chardham Packages, South India Temple Tours, Ooty Tours, etc. Find our most popular packages below and book as per your choice.
           </p>
         </div>

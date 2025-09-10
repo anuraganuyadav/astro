@@ -49,11 +49,6 @@ import ListProduct from './components/Admin/ListProduct';
 import PopularServiceDetail from './components/Common/PopularServiceDetail';
 import ConsultDetails from './components/Common/ConsultDetails';
 ;
-
-
-
-
-
 function App() {
   return (
     <BrowserRouter basename={SUBFOLDER_NAME}>
