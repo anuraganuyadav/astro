@@ -1,0 +1,32 @@
+.latestblogheading {
+	width: 100%;
+	border-top-right-radius: 48px;
+	border-bottom: 5px solid #d1580d;
+	color: orangered;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+/* Style for the latest blog images */
+.blog-image img {
+	width: 100%;
+	/* Ensures the image fills the container */
+	height: 250px;
+	/* Set a fixed height for the images */
+	object-fit: cover;
+	/* Ensures the image covers the entire area without distortion */
+	border-radius: 8px;
+	/* Optional: To give the image rounded corners */
+}
+
+.latestblg{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.blgbtn{
+	text-align: center;
+}
+.blgtitle{
+	text-align: center;
+	font-size: 16px;
+}

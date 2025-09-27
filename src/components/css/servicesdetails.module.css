@@ -1,0 +1,56 @@
+.servicedetailbanner {
+	background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(/img/bg-hero.webp);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	/* Set a fixed height for the banner */
+	padding: 0;
+	/* Remove extra padding to reduce heigh */
+}
+
+.servicedetailbanner img {
+	animation: imgRotate 50s linear infinite;
+	border-radius: 50%;
+	width: 12rem;
+	/* width: auto; */
+	/* Let the width adjust itself automatically */
+	height: 200px;
+	/* Adjust the height of the image */
+}
+
+@keyframes imgRotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+.servicepagecontent1 p {
+	font-size: 17px;
+	word-spacing: 3px;
+	letter-spacing: 0;
+	text-align: justify;
+}
+
+
+.servicepagecontent1 h1 {
+	text-align: center;
+	color: #e0122a;
+	font-weight: 900;
+	/* font-size: 3.5em; */
+	line-height: 1em;
+}
+
+.servicepagecontent1 {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: black;
+}
+
+.col-md-8,
+.col-md-4 {
+	margin-left: 15px;
+	margin-right: 15px;
+}

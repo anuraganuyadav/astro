@@ -1,0 +1,81 @@
+/* .sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #183153;
+  padding: 20px;
+  color: white;
+}
+
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+} */
+
+.sidebar {
+  /* width: 260px; */
+  height: 100vh;
+  background-color: #183153;
+  padding: 20px;
+  color: white;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  text-decoration: underline;
+}
+
+.menu li:hover a {
+  text-decoration: underline;
+  color: inherit; /* Hover pe current color hi dikhaye (e.g. red if active) */
+}
+
+.active a {
+  font-weight: bold;
+  color: red;
+  border-left: 4px solid #ff0062;
+  padding-left: 10px;
+}
+.logonav {
+  height: 60px;
+  border-radius: 5px;
+  margin-top: -19px;
+}

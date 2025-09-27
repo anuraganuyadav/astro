@@ -1,0 +1,40 @@
+.disclaimerSection {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.contentArea {
+  width: 100%;
+}
+
+.serviceLeadingSection h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.snBlue {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.serviceInfoContainer {
+  margin-bottom: 20px;
+}
+
+.discText {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.discList {
+  list-style: disc;
+  padding-left: 20px;
+  color: #333;
+}
+
+.discList li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}

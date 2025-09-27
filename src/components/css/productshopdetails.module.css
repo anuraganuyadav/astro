@@ -1,0 +1,131 @@
+.productdetailbanner {
+	background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.webp);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	/* Set a fixed height for the banner */
+	padding: 0;
+	/* Remove extra padding to reduce height */
+}
+
+.productdetailbanner img {
+	animation: imgRotate 50s linear infinite;
+	border-radius: 50%;
+	width: auto;
+	/* Let the width adjust itself automatically */
+	height: 200px;
+	/* Adjust the height of the image */
+}
+
+@keyframes imgRotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+
+.productimage {
+	max-height: 300px;
+	/* Adjust size of the main product image */
+	object-fit: cover;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.thumbnailContainer {
+	display: flex;
+	gap: 10px;
+	margin-top: 10px;
+}
+
+.thumbnailrounded {
+	width: 80px;
+	height: 80px;
+	object-fit: cover;
+	cursor: pointer;
+	opacity: 0.6;
+	transition: opacity 0.3s ease;
+}
+
+.thumbnailrounded:hover,
+.thumbnailrounded.active {
+	opacity: 1;
+}
+
+
+
+/*** itineary css in package details  ***/
+
+.itncontainer {
+	margin-top: 50px;
+	display: flex;
+	width: 100%;
+	height: 52px;
+	justify-content: space-around;
+	gap: 8px;
+	flex-shrink: 0;
+	border-radius: 6px;
+	background: rgb(224, 250, 255);
+	/* position: sticky; */
+	top: 120px;
+	z-index: 2;
+	box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 5px 0px;
+}
+
+.sectiontitle {
+	color: rgb(61, 61, 61);
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	height: 100%;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+/* Active section style */
+
+
+
+
+
+
+
+
+.inclusionscontainer {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	/* Adds space between the items */
+}
+
+.inclusionitem {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	/* Adds space between the icon and text */
+}
+
+.inclusionitem img {
+	width: 20px;
+	/* Adjust the icon size if needed */
+	height: auto;
+}
+
+.inclusionitem p {
+	margin: 0;
+	font-size: 16px;
+	/* Adjust font size if needed */
+	color: #333;
+	/* Adjust the text color if needed */
+}
+
+
+
+

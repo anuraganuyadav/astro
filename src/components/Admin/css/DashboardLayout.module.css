@@ -1,0 +1,22 @@
+.layout {
+    display: flex;
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+    /* Prevent full page scroll */
+}
+
+.rightSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* Ensure full height for proper scrolling inside */
+}
+
+.mainContent {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}

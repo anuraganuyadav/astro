@@ -1,0 +1,130 @@
+.checkoutbanner {
+	background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.webp);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	/* Set a fixed height for the banner */
+	padding: 0;
+	/* Remove extra padding to reduce height */
+}
+
+.checkoutbanner img {
+	animation: imgRotate 50s linear infinite;
+	border-radius: 50%;
+	width: auto;
+	/* Let the width adjust itself automatically */
+	height: 200px;
+	/* Adjust the height of the image */
+}
+
+@keyframes imgRotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.checkoutBanner {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/bg-hero.webp);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.checkoutBanner h1 {
+	color: white;
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.checkoutBtns {
+	display: flex;
+	gap: 10px;
+	/* Controls the space between the buttons */
+	margin-top: 10px;
+}
+
+/* Optional: if you want the buttons to be the same size and aligned */
+.checkoutBtns button {
+	flex: 1;
+}
+
+.checkBtn {
+	font-size: 13px;
+}
+
+/* Corrected hover effect */
+.checkBtn:hover {
+	background-color: orangered;
+	color: black;
+}
+
+
+/* productcheckout.module.css */
+.productimage {
+	margin-top: 20px;
+	/* Space above the image */
+	text-align: center;
+	/* Center-align the image horizontally */
+}
+
+.productimage img {
+	width: 150px;
+	/* Set a fixed width */
+	height: auto;
+	/* Maintain aspect ratio */
+}
+
+.orderheading{
+	text-align: center;
+}
+.listsummery{
+	text-align: center;
+}
+
+
+/* productcheckout.module.css */
+.listItem {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.quantityControls {
+	display: flex;
+	align-items: center;
+}
+
+.button {
+	width: 40px;
+	/* Set button width */
+	height: 40px;
+	/* Set button height */
+	font-size: 18px;
+	/* Make text larger */
+	margin: 0 8px;
+	/* Add spacing between buttons */
+	cursor: pointer;
+	/* Change cursor on hover */
+}
+
+.button:hover {
+	background-color: #343a40;
+	/* Dark background on hover */
+	color: white;
+	/* White text color on hover */
+}
+
+.quantity {
+	margin: 0 10px;
+	/* Add margin to left and right of quantity */
+	font-size: 18px;
+	/* Make quantity text larger */
+	font-weight: bold;
+	/* Make quantity text bold */
+}

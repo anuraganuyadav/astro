@@ -1,0 +1,26 @@
+/* General Styles */
+.detailsblogbaneer {
+	background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.webp);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+	/* Set a fixed height for the banner */
+	padding: 0;
+	/* Remove extra padding to reduce height */
+}
+
+.detailsblogbaneer img {
+	animation: imgRotate 50s linear infinite;
+	border-radius: 50%;
+	width: auto;
+	/* Let the width adjust itself automatically */
+	height: 200px;
+	/* Adjust the height of the image */
+}
+
+@keyframes imgRotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}

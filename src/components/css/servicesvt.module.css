@@ -1,0 +1,136 @@
+/* blogs.module.css
+.page-title.bg-1 {
+	background-image: url('img/astrology-banner.webp');
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+	padding: 100px 0;
+}
+
+.page-title.bg-1 .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.page-title.bg-1 .container {
+	position: relative;
+	z-index: 2;
+}
+
+.sectionblogwrap {
+	padding: 24px
+}
+
+.blgban {
+	color: white
+}
+
+.blogsname {
+	font-size: 20px;
+	color: black;
+	font-weight: 800;
+}
+
+.blogbord {
+	border: 1px solid black;
+	padding: 5px;
+	background-color: #fff;
+	box-shadow: 0 0 17px #3d3d3d;
+	border-radius: 10px;
+}
+
+
+.blogimg {
+	overflow: hidden;
+	box-shadow: 0 0 17px #3d3d3d;
+	border-radius: 10px;
+}
+
+.productbtn {
+	margin: 5px 20px;
+}
+
+.productdetbtn {
+	text-align: center;
+} */
+
+.servicecontainer {
+	margin: 0 20px;
+	position: relative;
+	padding: 20px 0;
+}
+
+.servicecontainer1 {
+	transition: all 0.5slinear;
+	box-shadow: 0 0 20px #928d8d;
+	position: relative;
+	border-radius: 50%;
+	box-shadow: 0 0 17px #ffc107;
+}
+
+.servicecontainer1>img {
+	width: 100% !important;
+	height: 10rem;
+	transition: all .5slinear;
+	border-radius: 50%;
+}
+
+.servicecontainer1a {
+	padding: 10px 2px;
+	color: blue;
+	width: 100%;
+	/* font-size: 20px; */
+	text-align: center;
+}
+
+.servicetext p {
+	color: #000;
+	text-align: center;
+}
+
+.servicetext a {
+	display: block;
+	max-width: 150px;
+	border: 1px solid #0f172b;
+	margin: 0 auto;
+	font-size: 15px;
+	padding: 7px;
+	color: #000;
+	transition: all .3s;
+	margin-top: -1rem;
+	border-radius: 5px;
+	background-color: orangered;
+	color: white;
+}
+
+.servicetext {
+	text-align: center;
+	padding: 10px 20px;
+}
+
+
+.servicesvtheading {
+	width: 100%;
+	border-top-right-radius: 48px;
+	border-bottom: 5px solid #d1580d;
+	color: orangered;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.servicetext p {
+	margin: 0;
+	/* Removes default margin */
+	padding: 0;
+	/* Removes default padding */
+}
+
+
+.vtservices{
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
